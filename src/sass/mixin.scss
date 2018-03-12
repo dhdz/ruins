@@ -1,0 +1,37 @@
+// @mixin声明的功能用@include调用
+
+
+//弹性盒兼容样式
+	//弹性容器
+	@mixin flex-box{
+		display: flex;
+		display:-webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+	@mixin flex-num ($num:1) {
+		-webkit-flex: $num;   /* Chrome */
+		-ms-flex: $num;      /* IE 10 */
+		flex: $num;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
+		-webkit-box-flex: $num;   /* OLD - iOS 6-, Safari 3.1-6 */
+		-moz-box-flex: $num;    /* OLD - Firefox 19- */
+	}
+	//弹性盒水平对齐
+	@mixin  flex-align-x($type:center){
+		-webkit-box-pack: $type;
+		-moz-box-pack: $type;
+		-ms-box-pack: $type;
+		-o-box-pack: $type;
+		box-pack: $type;
+		justify-content:$type;
+	}
+	//弹性盒垂直对齐
+	@mixin  flex-align-y($type:center){
+		-webkit-box-align: $type;
+		-moz-box-align: $type;
+		-ms-box-align: $type;
+		-o-box-align: $type;
+		box-align: $type;
+		align-items:$type;
+	}
