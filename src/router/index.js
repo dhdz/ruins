@@ -9,18 +9,15 @@ import Me from '@/components/me'
 Vue.use(Router)
 
 export default new Router({
+mode:'history',
   routes: [
-		{
-			path:'/login',
-			component:Login
-		},
 		{
 			path:'/',
 			component:Home
 		},
 		{
-			path:'/home',
-			component:Home
+			path:'/login',
+			component:Login
 		},
 		{
 			path:'/menu',

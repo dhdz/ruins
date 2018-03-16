@@ -1,5 +1,5 @@
 <template>
-<div id="main_nav" v-if="navOff">
+<div id="main_nav">
 	<div class="nav-bar">
 			<nav>
 				<router-link to="/home" tag="div"><span>首页</span></router-link >
@@ -16,24 +16,14 @@ export default {
 	name: 'mainNav',
 	data () {
 		return {
-			msg: '测试233',
-			navOff:true
+			msg: '测试233'
 		}
 	},
 	beforeCreate(){
-		this.$router.push("/")
+		// this.$router.replace("/")
 	},
 	watch:{
-		$route(to){
-			switch(to.path){
-				case "/login":
-				this.navOff=false
-				break;
-				default:
-				this.navOff=true
-				console.log(to.path)
-			}
-		}
+
 	}
 }
 </script>

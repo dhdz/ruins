@@ -11,37 +11,39 @@
 				</form>
 			</div>
 			<div class="footer-copy">
-					<div class="footer-left">页尾说明文字</div>
+					<div class="footer-left">ember-2018</div>
 					<div class="footer-right">备案信息</div>
 			</div>
 	</div>
 </template>
 <script>
 import Cookie from '@/libs/cookie'
-//音乐动态
-import Rythm from 'rythm.js'
 export default {
 	name: 'loginPage',
 	data () {
 		return {
-			msg: '正在施工'
+			msg: '废墟'
 		}
 	},
 	created(){
-		if(Cookie.get("userDate")!=undefined){
-			let sDate={
-				userName:Cookie.get("userDate")
-			}
-			this.$store.state.userDate=sDate;
-			this.$router.push('home')
+		// this.unescape=unescape(str)
+		// this.decodeURI=decodeURI(str)
+		// if(Cookie.get("userDate")!=undefined){
+		// 	console.log(Cookie.get("userDate"))
+		// 	let sDate={
+		// 		userName:Cookie.get("userDate")
+		// 	}
+		// 	this.$store.state.userDate=sDate;
+		// 	this.$router.push('home')
+		// }
+		},
+		mounted(){
+
+		// Rythm.addRythm('pulse', 'pulse', 0, 10);
+		// Rythm.setMusic("sample.mp3");
+		// Rythm.start();
 		}
-	}
 }
-
-const rythm = new Rythm();
-            rythm.setMusic("../../assets/audio/D1ofaquavibe.mp3");
-            rythm.start();
-
 </script>
 <style scoped lang="scss">
 #login_page{
@@ -71,7 +73,7 @@ const rythm = new Rythm();
 		#audio_box{
 			display:flex;
 			-webkit-justify-content: center;
-           justify-content: center;
+											justify-content: center;
 			div{
 				width: 50px;
 				height: 50px;

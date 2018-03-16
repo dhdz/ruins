@@ -1,5 +1,5 @@
 /*
-* 此为全局函数库
+* 全局函数库
 */
 exports.install = function (Vue, options) {
    Vue.prototype.baseFn = function (){
@@ -14,7 +14,7 @@ exports.install = function (Vue, options) {
 			// this.$router.push("/")
 		  break;
 		default:
-		  this.$router.push("/login")
+		  // this.$router.push("/login")//暂不支持登录
 		}
     };
 };

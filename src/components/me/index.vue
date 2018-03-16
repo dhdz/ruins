@@ -13,6 +13,7 @@ export default {
     }
   },
     created(){
+      //登录判断
       this.userLoginState()
     }
 }
