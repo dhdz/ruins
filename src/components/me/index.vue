@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'me',
   data () {
     return {
       msg: '个人信息'

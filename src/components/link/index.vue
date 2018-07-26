@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'link',
   data () {
     return {
       msg: '链接'

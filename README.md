@@ -26,8 +26,11 @@ sass //css预编译 node-sass , sass-loader
 	以及sass-resources-loader	//全局sass,免去繁琐的引入(按照官方配置会报错,PS:01)
 vuex //状态值集中管理
 normalize.css //修复浏览器自身的bug并保证各浏览器一致性,保留有用的默认样式而不是全去掉(*)
-https://github.com/MoeKit/cookie //上个项目中用的cookie库
-font-spider //字蛛,用于压缩中文字体
+animate.css 	//过度动画库
+https://github.com/MoeKit/cookie //cookie库
+font-spider //字蛛,用于压缩中文字体(测试失败)
+echarts 	//阿里的图表插件(已经弃用)
+mintui	//<饿了吗>出的移动端ui框架(已经弃用)
 
 
 
@@ -42,12 +45,12 @@ meMainPage
 	src	//项目主目录
 		assets	//静态资源
 		components	//组件集
-			home	//首页
-			link 	//快捷链接
+			home	//页面组件
+			link 	//页面组件
 			login 	//登录页
 			main_nav 	//主导航
-			me 	//关于我
-			menu 	//栏目菜单
+			me 	//页面组件
+			menu 	//页面组件
 		libs
 		router	//路由
 			index.js	//路由配置
@@ -67,6 +70,7 @@ meMainPage
 	README.md	//项目说明文本
 
 # end
+
 
 #说明:
 PS01:
